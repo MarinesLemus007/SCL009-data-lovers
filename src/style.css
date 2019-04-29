@@ -1,0 +1,44 @@
+body {
+    background-image: url("./img/fondo.png");
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background-size: 100%;
+  }
+
+ .container{
+    width:100%;
+    max-width:1000px;
+    /*margin:auto;*/
+ }
+ #cards-container{
+    float:left;
+    color: #2980b9;
+ }
+
+  header nav {
+      background:#3498db;
+      margin-bottom:10px;
+
+  }
+
+    header nav ul{
+        list-style:none;
+        overflow: hidden;
+    }
+
+    header nav ul li{
+        float:left;
+    }
+
+    header nav ul li a{
+        display:block;
+        padding: 20px;
+        color:#fff;
+        text-decoration: none;
+    }
+
+    header nav ul li a:hover{
+        background: #2980b9;
+        
+    }

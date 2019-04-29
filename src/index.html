@@ -3,21 +3,101 @@
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+<!--<link rel="stylesheet" href="style.css" />-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
-    <div id="root"></div>
-    <div>
-      <h1>
-        hola mundo!
-      </h1>
-    </div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
+    <header>
+
+      <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div class="logo">
+              <img src="./img/logo.png" alt="">
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="#">Menú de Inicio</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+            
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Ordenar
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" value="grownUp">Creciente</a>
+                      <a class="dropdown-item" value="decreasing">Decreciente</a>
+                    </div>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tipos de Pokémon
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" value="normal">Normal</a>
+                        <a class="dropdown-item" value="fire">Fuego (Fire)</a>
+                        <a class="dropdown-item" value="wate">Agua (Water)</a>
+                        <a class="dropdown-item" value="grass">Hierba / Planta (Grass)</a>
+                        <a class="dropdown-item" value="electric">Eléctrico (Electric)</a>
+                        <a class="dropdown-item" value="ice">Hielo (Ice)</a>
+                        <a class="dropdown-item" value="fighting">Lucha (Fighting)</a>
+                        <a class="dropdown-item" value="poison">Veneno (Poison)</a>
+                        <a class="dropdown-item" value="ground">Tierra (Ground)</a>
+                        <a class="dropdown-item" value="rock">Roca (Rock)</a>
+                        <a class="dropdown-item" value="flying">Volador (Flying)</a>
+                        <a class="dropdown-item" value="psychic">Psíquico (Psychic)</a>
+                        <a class="dropdown-item" value="bug">Insecto / Bicho (Bug)</a>
+                        <a class="dropdown-item" value="ghost">Fantasma (Ghost)</a>
+                        <a class="dropdown-item" value="dragon">Dragon</a> 
+                      </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Hora de salida
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" value="morning">Mañana</a>
+                          <a class="dropdown-item" value="late">Tarde</a>
+                          <a class="dropdown-item" value="night">Noche</a>
+                        </div>
+                      </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+        </div>
+  </header>
+  <br>
+  <br>
+  <br>
+  
+  <div class="container">
+            <div id="viewPokemon" class= "card-deck">
+      
+            </div>
+  </div>
+   
+         
+    <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
+    <script src="./js/jquery-3.4.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>

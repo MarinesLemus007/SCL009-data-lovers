@@ -1,11 +1,11 @@
 /* Manejo del DOM */
 
 
-let viewPokeObj = POKEMON.pokemon;
+let data = POKEMON.pokemon;
 
 console.log(POKEMON.pokemon);
 
-const filtro = viewPokeObj.filter( element => {
+const filtro = data.filter( element => {
     console.log(element.name);
 });
 
@@ -18,25 +18,21 @@ PokeMon.forEach(element => {
     console.log(element);
 }); sirve*/
 
-let PokeGrass = viewPokeObj.filter(view => {
+/*let PokeGrass = data.filter(view => {
     return (view.type.includes("Grass"));
 });
-console.log(PokeGrass);
+console.log(PokeGrass);*/
 
-/*const namePoke = viewPokeObj.filter(pokeName =>{
+/*const namePoke = data.filter(pokeName =>{
     return pokeName.name;
 });
 console.log(namePoke);*/
-for (let i=0; i< viewPokeObj.length; i++){
-    console.log(viewPokeObj[i].img);
-    console.log(viewPokeObj[i].id);
-    console.log(viewPokeObj[i].name);
-    console.log(viewPokeObj[i].type);
-};
-
-const PokeNum = viewPokeObj.filter(num => {
-    console.log(num.id);
-});
+/*for (let i=0; i< data.length; i++){
+    console.log(data[i].img);
+    console.log(data[i].id);
+    console.log(data[i].name);
+    console.log(data[i].type);
+}; */
 
 //orden creciente
 //arr.sort((a,b)=>a-b);
@@ -44,17 +40,17 @@ const PokeNum = viewPokeObj.filter(num => {
 //orden decreciente
 //arr.sort((a,b)=>b-a);
 
-for (let i=0; i< viewPokeObj.length; i++){
+for (let i=0; i< data.length; i++){
     document.getElementById("viewPokemon").innerHTML+=
 `
 
           <div class="col-12 col-sm-4 col-md-3">    
                 <div class="card bg-light mb-3" style="max-width: 18rem;" id= "cardPoke" align= "middle">
-                <img src= "${(viewPokeObj[i].img)}" class= "card-img-top" alt= "${(viewPokeObj[i].name)}" style="max-width: 9rem;">
+                <img src= "${(data[i].img)}" class= "card-img-top" alt= "${(data[i].name)}" style="max-width: 9rem;">
                 <div class="card-body">
-                <p class="card-name">${(viewPokeObj[i].name)}</p>
-                <p class="card-num"> Number: ${(viewPokeObj[i].id)}</p>
-                <p class="card-type"> Type: ${(viewPokeObj[i].type)}</p>
+                <p class="card-name">${(data[i].name)}</p>
+                <p class="card-num"> Number: ${(data[i].id)}</p>
+                <p class="card-type"> Type: ${(data[i].type)}</p>
                 </div>
                 </div>
             </div>
@@ -62,36 +58,35 @@ for (let i=0; i< viewPokeObj.length; i++){
 };
 
 // Muestra los pokemones filtrados por tipo
-document.getElementById("filterNormal").addEventListener("click", ()=> {
+const filterPokemon = document.getElementById("filterType").addEventListener("change", ()=> {
 
-    const PokeNormal = viewPokeObj.filter(view => {
-        return (view.type.includes("Normal"));
-    });
-    
-document.getElementById("viewPokemon").style.display = "none";
+document.getElementById("typePokemon").innerHTML="";
 
+let condition = document.getElementById("filterType").value;
 
-for (let j=0; j< PokeNormal.length; j++){
+let dataType = window.filterData(data,condition);
+
+console.log(dataType);
+
+document.getElementById("viewPokemon").style.display ="none";
+
+for (let i=0; i< dataType.length; i++){
 document.getElementById("typePokemon").innerHTML+=
+
 `
-<div class="col-12 col-sm-4 col-md-3">    
-      <div class="card bg-light mb-3" style="max-width: 18rem;" id= "cardPokeNormal" align= "middle">
-      <img src= "${(PokeNormal[j].img)}" class= "card-img-top" alt= "${(PokeNormal[j].name)}" style="max-width: 9rem;">
+<div class="col-12 col-sm-4">    
+      <div class="card bg-light mb-3" style="max-width: 18rem;" align= "middle">
+      <img src= "${(dataType[i].img)}" class= "card-img-top" alt= "${(dataType[i].name)}" style="max-width: 9rem;">
       <div class="card-body">
-      <p class="card-name">${(PokeNormal[j].name)}</p>
-      <p class="card-num"> Number: ${(PokeNormal[j].id)}</p>
-      <p class="card-type"> Type: ${(PokeNormal[j].type)}</p>
+      <p class="card-name">${(dataType[i].name)}</p>
+      <p class="card-num"> Number: ${(dataType[i].id)}</p>
+      <p class="card-type"> Type: ${(dataType[i].type)}</p>
       </div>
       </div>
   </div>
   `
-}  
+} 
+
 }
-  );
 
-  document.getElementById("restart").addEventListener("click", ()=> {
-
-    document.getElementById("typePokemon").style.display = "none";   
-    
-
-  });
+  ); 

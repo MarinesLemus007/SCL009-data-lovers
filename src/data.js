@@ -8,10 +8,19 @@
 };
 
 window.example = example;*/
+const filterData = (data, condition) =>{
+ const Poketype = data.filter(view => {
+  return (view.type.includes(condition));
+}); 
 
+return Poketype;
+}
 
-const example = () => {
-  return 'example';
-};
+window.filterData = filterData;
 
-window.example = example;
+/*const OrderNum = (data,decreasing) =>{
+  const PokeOrder = data.sort((a,b)=>b-a){
+    return ()
+  }
+  ;
+}*/

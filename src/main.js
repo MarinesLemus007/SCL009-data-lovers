@@ -1,13 +1,13 @@
 /* Manejo del DOM */
 
 
-let data = POKEMON.pokemon;
+const data = window.POKEMON.pokemon;
 
-console.log(POKEMON.pokemon);
+//console.log(POKEMON.pokemon);
 
-const filtro = data.filter( element => {
-    console.log(element.name);
-});
+/*const filtro = data.filter( element => {
+    //console.log(element.name);
+});/*
 
 /*console.log(Object.values(POKEMON)); sirve*/
 
@@ -55,10 +55,10 @@ for (let i=0; i< data.length; i++){
                 </div>
             </div>
 `
-};
+}
 
 // Muestra los pokemones filtrados por tipo
-const filterPokemon = document.getElementById("filterType").addEventListener("change", ()=> {
+/*const filterPokemon =*/ document.getElementById("filterType").addEventListener("change", ()=> {
 
 document.getElementById("typePokemon").innerHTML="";
 
@@ -66,7 +66,20 @@ let condition = document.getElementById("filterType").value;
 
 let dataType = window.filterData(data,condition);
 
-console.log(dataType);
+//console.log(dataType);
+
+/*const Order = () => {
+    let select = document.getElementById('filterOrder');
+    let value = select.value;
+    let orderResult;
+    if(value == 'Asc'){
+      Result = data.orderByNameAsc;
+    } else if (value == 'Des'){
+      Result = data.orderByNameDes;
+    } else {
+      Result = data.showPokemon;
+    }
+    createCards(Result);*/
 
 document.getElementById("viewPokemon").style.display ="none";
 

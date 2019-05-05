@@ -40,11 +40,12 @@
         </select>
         </li>
         
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown offset-1">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTwo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Tipos de Pokémon
         </a>
-        <select  id="filterType" >
+        <select class= "form-control" id="filterType" >
+        <option class="nav-link disabled">Tipos de Pókemon</option>
         <option class="dropdown-item" value="Normal">Normal</option>
         <option class="dropdown-item" value="Fire">Fuego (Fire)</option>
         <option class="dropdown-item" value="Water">Agua (Water)</option>
@@ -67,11 +68,11 @@
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownThree" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Hora de salida
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" value="morning">Mañana</a>
-        <a class="dropdown-item" value="late">Tarde</a>
-        <a class="dropdown-item" value="night">Noche</a>
-        </div>
+        <select id="departureTime">
+        <option class="dropdown-item" value="morning">Mañana</option>
+        <option class="dropdown-item" value="late">Tarde</option>
+        <option class="dropdown-item" value="night">Noche</option>
+        </select>
         </li>
 
         </ul>
@@ -92,10 +93,15 @@
   <br>
   <br>
   <div class="container">
-  <div id="viewPokemon" class= "card-deck">   
-  </div>      
+    <div id="viewPokemon" class= "card-deck">   
+    </div>      
   </div>
-  
+
+  <div class="container">
+    <div id="viewCalcule" class="card-columns">
+    </div>
+  </div>
+
   <footer>
   <div class="row">
   <div class="col-12">

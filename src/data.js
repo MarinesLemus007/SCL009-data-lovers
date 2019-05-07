@@ -18,8 +18,8 @@ return (view.type.includes(condition));
 return Poketype;
 }
 window.filterData = filterData;
-//Función de orden por número de pókemon
 
+//Función de orden por número de pókemon
 const filterOrder = (data, valueOrder, conditionOrder) =>{
 
   let dataOrder;
@@ -41,26 +41,58 @@ const filterOrder = (data, valueOrder, conditionOrder) =>{
 }  
 window.filterOrder = filterOrder;
 
-//const Pokeorder = data.reverse(viewTwo => {
-//return (viewTwo.data)
-//});
-
-//return Pokeorder;
-//}
-
-//const orderDataTwo = (data) =>{
-  //const PokeOrderTwo = data.sort((a,b) => {
-    //return (a.id - b.id)
-  //});
-    //return PokeOrderTwo;
-  //}
-  //window.orderDataTwo = orderDataTwo;
-
-  /*const filterHour = (data) =>{
-    const Pokehour = data.filter(view => {
-    return (view.spawn_time);
-    }); 
+//Función de calculo por hora de salida de los pókemones
+const filterHour = (data, valueHour, conditionHour) =>{
     
-    return Pokehour;
+  let dataHour;
+
+  if(conditionHour === "N/A"){
+    dataHour = data.filter(time => {
+      return (time[valueHour].includes(conditionHour));
+    });
+  }
+
+    else if(conditionHour === "morning"){
+      dataHour = data.filter(time => {
+        
+        let valueNew = time[valueHour];
+        let valueSlice =  valueNew.slice(0, 2);
+        let valueNum = parseInt(valueSlice);
+
+        if(valueNum >= 0 && valueNum < 12){
+          return (valueNew);
+        }
+    });
     }
-    window.filterHour = filterHour;*/
+
+    else if(conditionHour === "late"){
+      dataHour = data.filter(time => {
+        
+        let valueNew = time[valueHour];
+        let valueSlice =  valueNew.slice(0, 2);
+        let valueNum = parseInt(valueSlice);
+        
+        if(valueNum >= 12 && valueNum < 19){  
+          return (valueNew);
+        }
+    });
+    }
+
+    else if (conditionHour === "night"){
+      dataHour = data.filter(time => {
+        
+        let valueNew = time[valueHour];
+        let valueSlice =  valueNew.slice(0, 2);
+        let valueNum = parseInt(valueSlice);
+        
+        if(valueNum >= 19 && valueNum <= 23){  
+          return (valueNew);
+        }
+    });
+    }
+    
+    return dataHour;
+    }
+  
+    window.filterHour = filterHour;
+    

@@ -82,47 +82,68 @@ for (let i=0; i< dataOrder.length; i++){
     }
 });
 
-/*document.getElementById("departureTime").addEventListener("change", ()=> {
-let time = document.getElementById("departureTime").value;
-console.log(time);
-
-if(time === "morning"){
-
-  
-
+document.getElementById("departureTime").addEventListener("change", ()=> {
 document.getElementById("viewPokemon").style.display = "none";
-//document.getElementById("viewPokemon").innerHTML="";
-let dataHour = window.filterHour(data);
-console.log(dataHour);
+document.getElementById("viewCalculeTab").innerHTML="";
+document.getElementById("viewCalcule").innerHTML="";
 
-//if(dataHour[i].spawn_time >= "00:00" && dataHour[i].spawn_time < "12:00")
+let conditionHour = document.getElementById("departureTime").value;
+let dataHour;
+
+if( "morning" === conditionHour){
+  dataHour = window.filterHour(data, "spawn_time", "morning");
+}
+
+if( "late" === conditionHour){
+  dataHour = window.filterHour(data, "spawn_time", "late");
+}
+
+if ("night" === conditionHour){
+  dataHour = window.filterHour(data, "spawn_time","night");
+ }
+
+else if ("N/A" === conditionHour){
+  dataHour = window.filterHour(data, "spawn_time","N/A");
+ }
+
+//Card que muestra todos los pokémones ordenados por su hora de salida
+let percentData = (dataHour.length*100)/151;
+
+    document.getElementById("viewCalculeTab").innerHTML+=
+    `
+    <div class="card-group col-12">
+      <div class="row">
+        <div class="card" style="min-width: 30rem;">
+          <div class="card-body" style="min-width: 18rem;">
+          <h5 class="card-title">Cantidad de Pokemones: ${(dataHour.length)}</h5>
+          </div>
+        </div>
+        <div class="card" style="min-width: 30rem;">
+          <div class="card-body" style="min-width: 18rem;">
+          <h5 class="card-title">Porcentaje en el mundo Pokémon: ${(Math.round(percentData))}%</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+      `
 
 for (let i=0; i<dataHour.length; i++){
     document.getElementById("viewCalcule").innerHTML+=
     `
-    <div class="card">
-      <div class="card-body">
+  <div class="card-group col-12">
+    <div class="row">
+      <div class="card" style="min-width: 30rem;">
+        <div class="card-body" style="min-width: 18rem;">
         <h5 class="card-title">${(dataHour[i].name)}</h5>
-      
-    
-    <div class="card">  
-      <div class="card-body">
+        </div>
+      </div>
+      <div class="card" style="min-width: 30rem;">
+        <div class="card-body" style="min-width: 18rem;">
         <h5 class="card-title">${(dataHour[i].spawn_time)}</h5>
+        </div>
       </div>
     </div>
-    </div>
-    </div>
+  </div>
     `
     }
-    
-}
 })
-    
-    /*document.getElementById("viewPokemon").style.display = "none";
-    document.getElementById("tablePokemon").style.display = "block";*/
-    
-    //if(conditionTime === "morning"){
-    
-      //  document.getElementById("viewPokemon").innerHTML="";    
-       // let dataOrder = window.orderData(data, conditionOrder);
-//})

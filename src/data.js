@@ -23,7 +23,7 @@ window.filterData = filterData;
 const filterOrder = (data, valueOrder, conditionOrder) =>{
 
   let dataOrder;
-
+  
     if (conditionOrder === "decreasing"){
      dataOrder = data.sort((a,b) =>{
         return (b[valueOrder] - a[valueOrder]);
@@ -41,15 +41,16 @@ const filterOrder = (data, valueOrder, conditionOrder) =>{
 }  
 window.filterOrder = filterOrder;
 
-//Función de calculo por hora de salida de los pókemones
+//Función de filtrar por hora de salida de los pókemones, para luego hacer el cálculo
 const filterHour = (data, valueHour, conditionHour) =>{
-    
+  
   let dataHour;
 
   if(conditionHour === "N/A"){
     dataHour = data.filter(time => {
       return (time[valueHour].includes(conditionHour));
     });
+
   }
 
     else if(conditionHour === "morning"){
@@ -63,6 +64,7 @@ const filterHour = (data, valueHour, conditionHour) =>{
           return (valueNew);
         }
     });
+  
     }
 
     else if(conditionHour === "late"){
@@ -76,6 +78,7 @@ const filterHour = (data, valueHour, conditionHour) =>{
           return (valueNew);
         }
     });
+    
     }
 
     else if (conditionHour === "night"){
@@ -85,14 +88,23 @@ const filterHour = (data, valueHour, conditionHour) =>{
         let valueSlice =  valueNew.slice(0, 2);
         let valueNum = parseInt(valueSlice);
         
-        if(valueNum >= 19 && valueNum <= 23){  
+        if(valueNum >= 19 && valueNum <= 23){
           return (valueNew);
         }
     });
+    
     }
     
     return dataHour;
     }
   
     window.filterHour = filterHour;
-    
+
+//Función de calculo, porcentaje de pokémones según hora
+const filterCal = (data =>{
+let dataPercent = Math.round((data.length*100)/151);
+
+return dataPercent;
+});
+
+  window.filterCal = filterCal;

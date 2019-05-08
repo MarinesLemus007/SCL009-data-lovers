@@ -88,6 +88,10 @@ document.getElementById("viewCalculeTab").innerHTML="";
 document.getElementById("viewCalcule").innerHTML="";
 
 let conditionHour = document.getElementById("departureTime").value;
+//let valueHour;
+
+let dataPercent;
+
 let dataHour;
 
 if( "morning" === conditionHour){
@@ -106,8 +110,9 @@ else if ("N/A" === conditionHour){
   dataHour = window.filterHour(data, "spawn_time","N/A");
  }
 
-//Card que muestra todos los pokémones ordenados por su hora de salida
-let percentData = (dataHour.length*100)/151;
+
+dataPercent = window.filterCal(dataHour)
+
 
     document.getElementById("viewCalculeTab").innerHTML+=
     `
@@ -120,7 +125,7 @@ let percentData = (dataHour.length*100)/151;
         </div>
         <div class="card" style="min-width: 30rem;">
           <div class="card-body" style="min-width: 18rem;">
-          <h5 class="card-title">Porcentaje en el mundo Pokémon: ${(Math.round(percentData))}%</h5>
+          <h5 class="card-title">Porcentaje en el mundo Pokémon: ${(dataPercent)}%</h5>
           </div>
         </div>
       </div>

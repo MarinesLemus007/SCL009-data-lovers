@@ -1,6 +1,9 @@
+.limargin{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
-
- #cardPoke{
+#cardPoke{
     max-width:20rem;
     max-height:20rem;
     width:100%;

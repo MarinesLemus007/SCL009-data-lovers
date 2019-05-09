@@ -9,9 +9,9 @@ for (let i=0; i< data.length; i++){
 document.getElementById("viewPokemon").innerHTML+=
 `
 <div class="col-12 col-sm-6 col-md-4 col-lg-3">    
-    <div class="card bg-light mb-3" style="max-width: 18rem;" id= "cardPoke" align= "middle">
-    <img src= "${(data[i].img)}" class= "card-img-top" alt= "Card image pokémon" style="max-width: 9rem;">
-    <div class="card-body" style="max-width: 9rem;" >
+    <div class="card bg-light mb-3" id= "cardPoke" align= "middle">
+    <img src= "${(data[i].img)}" class= "card-img-top" alt= "Card image pokémon" id="cardImage">
+    <div class="card-body text-dark" id= "cardPokeTwo">
     <p class="card-title">${(data[i].name)}</p>
     <p class="card-title"> Number: ${(data[i].id)}</p>
     <p class="card-title"> Type: ${(data[i].type)}</p>
@@ -32,9 +32,9 @@ for (let i=0; i< dataType.length; i++){
 document.getElementById("viewPokemon").innerHTML+=
 `
 <div class="col-12 col-sm-6 col-md-4 col-lg-3">    
-      <div class="card bg-light mb-3" style="max-width: 18rem;" id= "cardType" align= "middle">
-      <img src= "${(dataType[i].img)}" class= "card-img-top" alt= "Card image pokémon type" style="max-width: 9rem;">
-      <div class="card-body" style="max-width: 9rem;" >
+      <div class="card bg-light mb-3" id= "cardPoke" align= "middle">
+      <img src= "${(dataType[i].img)}" class= "card-img-top" alt= "Card image pokémon type" id="cardImage">
+      <div class="card-body text-dark" id="cardPokeTwo">
       <p class="card-name">${(dataType[i].name)}</p>
       <p class="card-num"> Number: ${(dataType[i].id)}</p>
       <p class="card-type"> Type: ${(dataType[i].type)}</p>
@@ -65,9 +65,9 @@ for (let i=0; i< dataOrder.length; i++){
     document.getElementById("viewPokemon").innerHTML+=
     `
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">    
-        <div class="card bg-light mb-3" style="max-width: 18rem;" id= "cardPoke" align= "middle">
-        <img src= "${(dataOrder[i].img)}" class= "card-img-top" alt= "Card image pokémon" style="max-width: 9rem;">
-        <div class="card-body" style="max-width: 9rem;" >
+        <div class="card bg-light mb-3" id= "cardPoke" align= "middle">
+        <img src= "${(dataOrder[i].img)}" class= "card-img-top" alt= "Card image pokémon" id="cardImage">
+        <div class="card-body text-dark" id="cardPokeTwo" >
         <p class="card-name">${(dataOrder[i].name)}</p>
         <p class="card-num"> Number: ${(dataOrder[i].id)}</p>
         <p class="card-type"> Type: ${(dataOrder[i].type)}</p>
@@ -108,16 +108,16 @@ dataPercent = window.filterCal(dataHour)
 
     document.getElementById("viewCalculeTab").innerHTML+=
     `
-    <div class="card-group col-12">
+    <div class="card-group col-12 justify-content-center">
       <div class="row">
-        <div class="card" style="min-width: 30rem;">
-          <div class="card-body" style="min-width: 18rem;">
-          <h5 class="card-title">Cantidad de Pokemones: ${(dataHour.length)}</h5>
+        <div class="card" id= "cardHour">
+          <div class="card-body text-dark" id= "cardHour_2">
+          <h5 class="card-title">Cantidad: ${(dataHour.length)}</h5>
           </div>
         </div>
-        <div class="card" style="min-width: 30rem;">
-          <div class="card-body" style="min-width: 18rem;">
-          <h5 class="card-title">Porcentaje en el mundo Pokémon: ${(dataPercent)}%</h5>
+        <div class="card" id= "cardHourTwo">
+          <div class="card-body text-dark" id= "cardHourTwo_2">
+          <h5 class="card-title">Porcentaje: ${(dataPercent)}%</h5>
           </div>
         </div>
       </div>
@@ -127,15 +127,15 @@ dataPercent = window.filterCal(dataHour)
 for (let i=0; i<dataHour.length; i++){
     document.getElementById("viewCalcule").innerHTML+=
     `
-  <div class="card-group col-12">
+  <div class="card-group col-12 justify-content-center">
     <div class="row">
-      <div class="card" style="min-width: 30rem;">
-        <div class="card-body" style="min-width: 18rem;">
+      <div class="card" id="cardPokeHour">
+        <div class="card-body text-dark" id="cardPokeHour_2">
         <h5 class="card-title">${(dataHour[i].name)}</h5>
         </div>
       </div>
-      <div class="card" style="min-width: 30rem;">
-        <div class="card-body" style="min-width: 18rem;">
+      <div class="card" id="cardPokeHourTwo">
+        <div class="card-body text-dark" id="cardPokeHourTwo_2">
         <h5 class="card-title">${(dataHour[i].spawn_time)}</h5>
         </div>
       </div>

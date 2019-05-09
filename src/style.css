@@ -1,44 +1,63 @@
-body {
-    background-image: url("./img/fondo.png");
-    font-family: sans-serif;
-    font-size: 30px;
-    text-align: center;
-    background-size: 100%;
-  }
 
- .container{
+
+ #cardPoke{
+    max-width:20rem;
+    max-height:20rem;
     width:100%;
-    max-width:1000px;
-    /*margin:auto;*/
- }
- #cards-container{
-    float:left;
-    color: #2980b9;
+    height:auto;
  }
 
-  header nav {
-      background:#3498db;
-      margin-bottom:10px;
+ #cardImage{
+    max-width:10rem;
+    height:5rem;
+    width:100%;
+    height:auto;
+    padding-top:1rem;
+ }
 
-  }
+ #cardPokeTwo{
+    max-width:10rem;
+    height:5rem;
+    width:100%;
+    height:auto;
+ }
 
-    header nav ul{
-        list-style:none;
-        overflow: hidden;
-    }
+ #cardHour{
+    min-width: 15rem;
+    max-width: 25rem;
+ }
 
-    header nav ul li{
-        float:left;
-    }
+ #cardHour_2{
+    min-width: 17rem;
+    max-width: 20rem;
+ }
 
-    header nav ul li a{
-        display:block;
-        padding: 20px;
-        color:#fff;
-        text-decoration: none;
-    }
+ #cardHourTwo{
+    min-width: 15rem;
+    max-width: 25rem;
+ }
 
-    header nav ul li a:hover{
-        background: #2980b9;
-        
-    }
+ #cardHourTwo_2{
+    min-width: 17rem;
+    max-width: 20rem;
+ }
+
+ #cardPokeHour{
+    min-width: 15rem;
+    max-width: 25rem;
+ }
+
+ #cardPokeHour_2{
+    min-width: 17rem;
+    max-width: 20rem;
+ }
+
+ #cardPokeHourTwo{
+    min-width: 15rem;
+    max-width: 25rem;
+ }
+
+ #cardPokeHourTwo_2{
+    min-width: 17rem;
+    max-width: 20rem;
+ }

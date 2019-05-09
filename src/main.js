@@ -4,8 +4,6 @@
 
 const data = window.POKEMON.pokemon;
 
-//document.getElementById("tablePokemon").style.display = "none";
-
 //Card que muestra todos los pokémones en la pantalla inicial
 for (let i=0; i< data.length; i++){
 document.getElementById("viewPokemon").innerHTML+=
@@ -26,10 +24,8 @@ document.getElementById("viewPokemon").innerHTML+=
 document.getElementById("filterType").addEventListener("change", ()=> {
 
 document.getElementById("viewPokemon").innerHTML="";
-//document.getElementById("cardPoke").reset();
 
 let condition = document.getElementById("filterType").value;
-
 let dataType = window.filterData(data,condition);
 
 for (let i=0; i< dataType.length; i++){
@@ -88,10 +84,7 @@ document.getElementById("viewCalculeTab").innerHTML="";
 document.getElementById("viewCalcule").innerHTML="";
 
 let conditionHour = document.getElementById("departureTime").value;
-//let valueHour;
-
 let dataPercent;
-
 let dataHour;
 
 if( "morning" === conditionHour){
@@ -112,7 +105,6 @@ else if ("N/A" === conditionHour){
 
 
 dataPercent = window.filterCal(dataHour)
-
 
     document.getElementById("viewCalculeTab").innerHTML+=
     `

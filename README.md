@@ -2,7 +2,7 @@
 
 Es una página informativa de la aplicación Pokémon Go! para jugadores novatos y/o de nivel intermedio, en ella podrán encontrar todos los pokémones de la primera generación con su respectiva información la cual es el nombre, tipo, número, hora de salida y sus evoluciones. El usuario puede ordenar numéricamente, puede filtrar según tipo, calcular la hora de salida, y volver a inicio siempre que quiera.
 
-![print de pag](nombredecarpeta/nombredeimagen.formato)  / [lpagina](link)
+  Aqui está el [link](https://marineslemus007.github.io/SCL009-data-lovers/src/index.html) de la página.
 
 Para realizar este royecto hicimos una organizacion y nos ayudamos con trello
 * Organización general: [link](https://trello.com/b/vCLMXuoN/daily-data-lovers)
@@ -59,6 +59,7 @@ aqui les dejo el [link](zpl.io/VkpdpAv) de zeplin
 
   * información completa de los pokémones
   * un orden alfabetico
+  
  _se entendía la información_
 
 
@@ -71,6 +72,7 @@ aqui les dejo el [link](zpl.io/VkpdpAv) de zeplin
 
   * renombrar el nombre calculo por lo que se iba a mostrar para entenderlo mejor
   * menu inicial fijo
+
   _estaba organizado y buen contraste_
 
 

@@ -4,6 +4,12 @@ Es una página informativa de la aplicación Pokémon Go! para jugadores novatos
 
 ![print de pag](nombredecarpeta/nombredeimagen.formato)  / [lpagina](link)
 
+Para realizar este royecto hicimos una organizacion y nos ayudamos con trello
+* Organización general: [link](https://trello.com/b/vCLMXuoN/daily-data-lovers)
+
+* Organización diario: [link](https://trello.com/b/NtSRecf4/data-lovers)
+
+
 ## PROTOTIPO DE BAJA FIDELIDAD 
  Para esto hicimos una [encuesta](https://docs.google.com/forms/d/e/1FAIpQLSebA2aWBVW7n2An2sUnxp1CZ5NtSrGVCcvkoVuFlW3eqmIl8w/viewform?usp=sf_link)  para saber cuales eran las necesidades de nuestro usuario.
 
@@ -22,9 +28,7 @@ Al hacer el  análisis nos dimos cuenta que el perfil de nuestro usuario iban a 
 ## Imagen de prototipo de baja fidelidad
 
 ![imagen de prototipo de baja fidelidad](imgs/prototipo1.jpeg)
-
-![imagen de prototipo de baja fidelidad](imgs/prototipo2.jpeg)
-
+![imagen de prototipo de baja fidelidad](imgs/prototipo2.jpeg) 
 ![imagen de prototipo de baja fidelidad](imgs/prorotipo3.jpeg)
 
 ## PROTOTIPO DE ALTA FIDELIDAD
@@ -34,33 +38,63 @@ aqui les dejo el [link](zpl.io/VkpdpAv) de zeplin
 
 ## HISTORIAS DE USUARIO
 
-* Historia de usuario 1: _Yo como_ usuario de Pokémon Go _quiero_ filtrar los pokemones por tipo _para_ reconocer los pokemones que poseo.
+* Historia de usuario 1:_Yo quiero_ usuario de Pokémon Go _quiero_ filtrar los pokemones por tipo _para_ reconocer los pokemones que poseo.
 
-* Historia de usuario 2: _Yo como_ usuario de Pokémon Go _quiero_ filtrar los pokemones por tipo _para_ saber con cuál pokémon atacar o defenderme en las batallas.
+* Historia de usuario 2: _Yo quiero_ usuario de Pokémon Go QUIERO filtrar los pokemones por tipo _para_ saber con cuál pokémon atacar o defenderme en las batallas.
 
-* Historia de usuario 3: _Yo como_ usuario de pokémon go! _quiero_ ordenar los pokémones por número, de manera creciente y decreciente, _para_ tener diferente vistas de los pokémones mostrados.
+* Historia de usuario 3: _Yo quiero_ usuario de pokémon go! _quiero_ ordenar los pokémones por número, de manera creciente y decreciente, _para_ tener diferente vistas de los pokémones mostrados.
 
-* Historia de usuario 4:  _Yo como_ usuario de Pokémon Go _quiero_ tener un cálculo por hora de salida de los pokemones _para_ capturar los que me faltan.
+* Historia de usuario 4: _Yo como_ usuario de Pokémon Go _quiero_ tener un cálculo (porcentaje) asociado a la hora de salida de los pokémones _para_ saber en que tramo del día puedo capturar más pokémones.
 
 ## Testeos
 
  
 * Testeo 1: [audio](https://soundcloud.com/dharma-herrera/beta)
 
+  * el usuario pidió un filtro de búsqueda 
+  * vista con todos los pokémones y
+  * expandir las información de los pokémones
+
 * Testeo 2: [audio](https://soundcloud.com/dharma-herrera/gelen)  
+
+  * información completa de los pokémones
+  * un orden alfabetico
+ _se entendía la información_
+
 
 * Testeo 3: [audio](https://soundcloud.com/dharma-herrera/nohemi)
 
+  * botón del menú inicial arriba
+  * colocar arriba los tres filtros y que queden fijos  
+
 * Testeo 4: [audio](https://soundcloud.com/dharma-herrera/stefany)
+
+  * renombrar el nombre calculo por lo que se iba a mostrar para entenderlo mejor
+  * menu inicial fijo
+  _estaba organizado y buen contraste_
+
 
 * Testeo 5: [audio](https://soundcloud.com/dharma-herrera/urzula)
 
+  * filtro de búsqueda por nombre
+
+  _pagina fácil de entender_
+
+
 * testeo 6: [audio](https://soundcloud.com/dharma-herrera/ignacio)
+
+  * filtro de busqueda por nombre
+
+  _era fácil de hacer las tareas_
 
 ## Conclusión
 
 * Para el usuario era de facilidad hacer las tareas que se le otorgaron.  
-* nos pidieron incluir un buscador
-* que el botón de inicio estuviera visible al inicio de la página
+* Nos pidieron incluir un buscador.
+* Nos pidieron que todos los pokémones fueran  visibles al.
+* Que el botón de inicio estuviera visible al comienzo de la página.
+* Renombrar el botón del calculo para entender mejor su función.
+* Ordenar alfabeticamente.
+* Informaci+on completa de los pokémones
 
-De estas dos sugerencias logramos solucionar una la cual era del botón de inicio, mientras que incluir el buscador se dejara como  implementación mas adelante.
+De estas  sugerencias logramos solucionar el botón de inicio, que todos los pokémones fueran visibles,renombrar  el botón de calculo. Mientras que incluir el buscador,  el orden alfabetico y mostrar toda la información de estos se dejara como  implementación mas adelante.

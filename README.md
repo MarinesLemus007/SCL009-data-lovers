@@ -38,11 +38,11 @@ aqui les dejo el [link](https://app.zeplin.io/project/5cd41b809b7e1c03ae244190) 
 
 ## HISTORIAS DE USUARIO
 
-* Historia de usuario 1:_Yo quiero_ usuario de Pokémon Go _quiero_ filtrar los pokemones por tipo _para_ reconocer los pokemones que poseo.
+* Historia de usuario 1:_Yo como_ usuario de Pokémon Go _quiero_ filtrar los pokemones por tipo _para_ reconocer los pokemones que poseo.
 
-* Historia de usuario 2: _Yo quiero_ usuario de Pokémon Go QUIERO filtrar los pokemones por tipo _para_ saber con cuál pokémon atacar o defenderme en las batallas.
+* Historia de usuario 2: _Yo como_ usuario de Pokémon Go QUIERO filtrar los pokemones por tipo _para_ saber con cuál pokémon atacar o defenderme en las batallas.
 
-* Historia de usuario 3: _Yo quiero_ usuario de pokémon go! _quiero_ ordenar los pokémones por número, de manera creciente y decreciente, _para_ tener diferente vistas de los pokémones mostrados.
+* Historia de usuario 3: _Yo como_ usuario de pokémon go! _quiero_ ordenar los pokémones por número, de manera creciente y decreciente, _para_ tener diferente vistas de los pokémones mostrados.
 
 * Historia de usuario 4: _Yo como_ usuario de Pokémon Go _quiero_ tener un cálculo (porcentaje) asociado a la hora de salida de los pokémones _para_ saber en que tramo del día puedo capturar más pokémones.
 

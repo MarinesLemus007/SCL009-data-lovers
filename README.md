@@ -2,7 +2,7 @@
 
 Es una página informativa de la aplicación Pokémon Go! para jugadores novatos y/o de nivel intermedio, en ella podrán encontrar todos los pokémones de la primera generación con su respectiva información la cual es el nombre, tipo, número, hora de salida y sus evoluciones. El usuario puede ordenar numéricamente, puede filtrar según tipo, calcular la hora de salida, y volver a inicio siempre que quiera.
 
-![print de pag](nombredecarpeta/nombredeimagen.formato)  / [lpagina](link)
+  Aqui está el [link](https://marineslemus007.github.io/SCL009-data-lovers/src/index.html) de la página.
 
 Para realizar este royecto hicimos una organizacion y nos ayudamos con trello
 * Organización general: [link](https://trello.com/b/vCLMXuoN/daily-data-lovers)
@@ -59,6 +59,7 @@ aqui les dejo el [link](zpl.io/VkpdpAv) de zeplin
 
   * información completa de los pokémones
   * un orden alfabetico
+  
  _se entendía la información_
 
 
@@ -71,6 +72,7 @@ aqui les dejo el [link](zpl.io/VkpdpAv) de zeplin
 
   * renombrar el nombre calculo por lo que se iba a mostrar para entenderlo mejor
   * menu inicial fijo
+
   _estaba organizado y buen contraste_
 
 
@@ -87,7 +89,7 @@ aqui les dejo el [link](zpl.io/VkpdpAv) de zeplin
 
   _era fácil de hacer las tareas_
 
-## Conclusión
+## Análisis
 
 * Para el usuario era de facilidad hacer las tareas que se le otorgaron.  
 * Nos pidieron incluir un buscador.
@@ -98,3 +100,12 @@ aqui les dejo el [link](zpl.io/VkpdpAv) de zeplin
 * Informaci+on completa de los pokémones
 
 De estas  sugerencias logramos solucionar el botón de inicio, que todos los pokémones fueran visibles,renombrar  el botón de calculo. Mientras que incluir el buscador,  el orden alfabetico y mostrar toda la información de estos se dejara como  implementación mas adelante.
+
+
+## Testeo con el producto final
+
+aqui esta el [testeo 1](https://www.loom.com/share/ef16a9eae59d4f1e85d14458e0e21ad7), [testeo 2](https://www.loom.com/share/78fc0e874a9f4e56b12b099040723b32) con el producto final.
+
+## Conclusión 
+
+Encontraron buena la página, facil de ocupar, entendible y eran claras las acciones que uno como usuario podía hacer. 

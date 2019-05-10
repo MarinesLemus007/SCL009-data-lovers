@@ -25,7 +25,7 @@ Al hacer el  análisis nos dimos cuenta que el perfil de nuestro usuario iban a 
 
 ![imagen del control de flujo](imgs/flujo.jpeg)
 
-## Imagen de prototipo de baja fidelidad
+## Imagenes de prototipo de baja fidelidad
 
 ![imagen de prototipo de baja fidelidad](imgs/prototipo1.jpeg)
 ![imagen de prototipo de baja fidelidad](imgs/prototipo2.jpeg) 
@@ -34,7 +34,7 @@ Al hacer el  análisis nos dimos cuenta que el perfil de nuestro usuario iban a 
 ## PROTOTIPO DE ALTA FIDELIDAD
 
 Al tener el de baja fidelidad, con la herramienta de diseño visual ¨Figma¨ hicimos el  [prototipo de alta fidelidad](https://www.figma.com/proto/IBQ4CpS4A5yP83N4J0QEfJCx/Untitled?node-id=34%3A1&scaling=min-zoom&redirected=1) y con este hicimos las historias de usuario y  el testeo a diferentes personas.
-aqui les dejo el [link](zpl.io/VkpdpAv) de zeplin
+aqui les dejo el [link](https://app.zeplin.io/project/5cd41b809b7e1c03ae244190) de zeplin
 
 ## HISTORIAS DE USUARIO
 

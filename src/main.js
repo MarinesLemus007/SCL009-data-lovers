@@ -84,6 +84,7 @@ document.getElementById("viewCalculeTab").innerHTML="";
 document.getElementById("viewCalcule").innerHTML="";
 
 let conditionHour = document.getElementById("departureTime").value;
+let countPoke;
 let dataPercent;
 let dataHour;
 
@@ -103,8 +104,8 @@ else if ("N/A" === conditionHour){
   dataHour = window.filterHour(data, "spawn_time","N/A");
  }
 
-
-dataPercent = window.filterCal(dataHour)
+countPoke = window.filterCounterHour(dataHour,"spawn_time");
+dataPercent = window.filterCal(countPoke);
 
     document.getElementById("viewCalculeTab").innerHTML+=
     `
@@ -112,7 +113,7 @@ dataPercent = window.filterCal(dataHour)
       <div class="row">
         <div class="card" id= "cardHour">
           <div class="card-body text-dark" id= "cardHour_2">
-          <h5 class="card-title">Cantidad: ${(dataHour.length)}</h5>
+          <h5 class="card-title">Cantidad: ${(countPoke)}</h5>
           </div>
         </div>
         <div class="card" id= "cardHourTwo">

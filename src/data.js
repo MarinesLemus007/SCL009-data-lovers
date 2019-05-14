@@ -94,15 +94,25 @@ const filterHour = (data, valueHour, conditionHour) =>{
     });
     
     }
-    
     return dataHour;
     }
   
     window.filterHour = filterHour;
 
+//Función contador, cantidad de pokémones según tramo horario
+const filterCounterHour = (data, conditionHour) =>{
+  let countPoke = data.reduce((count,data) =>{
+    if(data[conditionHour]){
+    return count + 1;}
+  },0)
+  return countPoke;
+};
+
+window.filterCounterHour = filterCounterHour;
+
 //Función de calculo, porcentaje de pokémones según hora
 const filterCal = (data =>{
-let dataPercent = Math.round((data.length*100)/151);
+let dataPercent = Math.round((data*100)/151);
 
 return dataPercent;
 });

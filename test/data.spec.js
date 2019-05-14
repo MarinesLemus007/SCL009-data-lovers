@@ -132,14 +132,14 @@ describe("window.filterData", () => {
 
                 })
 
-                describe("window.filterCal", () => {
+                describe("window.filterCounterHour", () => {
   
                   it("debería ser una función", () => {
-                    assert.equal(typeof window.filterCal, "function");
+                    assert.equal(typeof window.filterCounterHour, "function");
                   });
                 })
 
-                describe("window.filterCal", () => {
+                describe("window.filterCounterHour", () => {
                   const Data = [
                     { 
                       "name": "Ivysaur",
@@ -159,8 +159,24 @@ describe("window.filterData", () => {
                     },
                     ]
                   
-                    it("deberia retornar 3%", () => {
-                      assert.deepEqual(window.filterCal(Data), 3)
+                    it("deberia retornar 4", () => {
+                      assert.deepEqual(window.filterCounterHour(Data,"spawn_time"), 4)
+                      });
+
+                    })
+
+                describe("window.filterCal", () => {
+  
+                  it("debería ser una función", () => {
+                    assert.equal(typeof window.filterCal, "function");
+                  });
+                })
+
+                describe("window.filterCal", () => {
+                  const Num = [151]
+                  
+                    it("deberia retornar 100%", () => {
+                      assert.deepEqual(window.filterCal(Num), 100)
                       });
 
                     })

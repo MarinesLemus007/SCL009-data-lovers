@@ -1,16 +1,28 @@
-## *POKEDEX APP*
+## DATA LOVERS, *POKEDEX APP*
 
-Es una página informativa de la aplicación Pokémon Go! para jugadores novatos y/o de nivel intermedio, en ella podrán encontrar todos los pokémones de la primera generación con su respectiva información la cual es el nombre, tipo, número, hora de salida y sus evoluciones. El usuario puede ordenar numéricamente, puede filtrar según tipo, calcular la hora de salida, y volver a inicio siempre que quiera.
+##Sobre nuestra aplicación
 
-  Aqui está el [link](https://marineslemus007.github.io/SCL009-data-lovers/src/index.html) de la página.
+*POKEDEX APP* Es una página informativa dirijida a los usuarios que usan la apliacación de Pokémon Go!. Nuestros usuarios: jugadores novatos y/o de nivel intermedio, podrán encontrar todos los pokémones de la primera generación (151 pokémon). Nuestra aplicación ofrece información y visualización de los pokémones. La información que pueden obtener: nombre del pokémon, tipo, número y hora de salida de los pokémones divididos en mañana, tarde, noche y para los que no aplica un horario fijo. 
 
-Para realizar este royecto hicimos una organizacion y nos ayudamos con trello
-* Organización general: [link](https://trello.com/b/vCLMXuoN/daily-data-lovers)
+En nuestra aplicación el usuario puede: ordenar, según número del pokémon, de manera creciente o decreciente. Puede filtrar según tipo de pokémon y obtener el porcentaje según hora de salida de los pokémes. Puede también volver a la página de inicio siempre que quiera.
 
-* Organización diario: [link](https://trello.com/b/NtSRecf4/data-lovers)
+a continuación, el enlace a la aplicación:
+[Pokedex App](https://marineslemus007.github.io/SCL009-data-lovers/src/index.html) de la página.
 
+## Proceso de diseño
 
-## PROTOTIPO DE BAJA FIDELIDAD 
+Para realizar este proyecto planteamos una serie de pasos basadas en la historia de usuario. 
+
+A continuación, enlace al trello donde se aprecian las historias de usuario y los criterios utilizados:
+
+* Organización general: [Trello](https://trello.com/b/vCLMXuoN/daily-data-lovers)
+
+En el siguiente Trello, se muestra nuestra planificación diária:
+
+* Organización diario: [Trello_2](https://trello.com/b/NtSRecf4/data-lovers)
+
+## Prototipo de baja fidelidad 
+ 
  Para esto hicimos una [encuesta](https://docs.google.com/forms/d/e/1FAIpQLSebA2aWBVW7n2An2sUnxp1CZ5NtSrGVCcvkoVuFlW3eqmIl8w/viewform?usp=sf_link)  para saber cuales eran las necesidades de nuestro usuario.
 
 Estos son los resultados de la encuesta:
@@ -38,11 +50,11 @@ aqui les dejo el [link](zpl.io/VkpdpAv) de zeplin
 
 ## HISTORIAS DE USUARIO
 
-* Historia de usuario 1:_Yo quiero_ usuario de Pokémon Go _quiero_ filtrar los pokemones por tipo _para_ reconocer los pokemones que poseo.
+* Historia de usuario 1:_Yo como_ usuario de Pokémon Go _quiero_ filtrar los pokemones por tipo _para_ reconocer los pokemones que poseo.
 
-* Historia de usuario 2: _Yo quiero_ usuario de Pokémon Go QUIERO filtrar los pokemones por tipo _para_ saber con cuál pokémon atacar o defenderme en las batallas.
+* Historia de usuario 2: _Yo como_ usuario de Pokémon Go QUIERO filtrar los pokemones por tipo _para_ saber con cuál pokémon atacar o defenderme en las batallas.
 
-* Historia de usuario 3: _Yo quiero_ usuario de pokémon go! _quiero_ ordenar los pokémones por número, de manera creciente y decreciente, _para_ tener diferente vistas de los pokémones mostrados.
+* Historia de usuario 3: _Yo como_ usuario de pokémon go! _quiero_ ordenar los pokémones por número, de manera creciente y decreciente, _para_ tener diferente vistas de los pokémones mostrados.
 
 * Historia de usuario 4: _Yo como_ usuario de Pokémon Go _quiero_ tener un cálculo (porcentaje) asociado a la hora de salida de los pokémones _para_ saber en que tramo del día puedo capturar más pokémones.
 

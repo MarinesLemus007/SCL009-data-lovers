@@ -2,7 +2,18 @@
 
 //Costante que encierra el array de los pokemones
 
-const data = window.POKEMON.pokemon;
+//const data = window.POKEMON.pokemon;
+
+//Agregando el fetch
+
+
+fetch("https://raw.githubusercontent.com/MarinesLemus007/SCL009-data-lovers/master/src/data/pokemon/pokemon.json")
+.then(response =>{ return response.json()
+})
+.then(myJson => {
+const data = myJson.pokemon;
+
+
 
 //Card que muestra todos los pokémones en la pantalla inicial
 for (let i=0; i< data.length; i++){
@@ -144,4 +155,6 @@ for (let i=0; i<dataHour.length; i++){
   </div>
     `
     }
+})
+
 })

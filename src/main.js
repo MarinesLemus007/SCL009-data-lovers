@@ -91,6 +91,7 @@ for (let i=0; i< dataOrder.length; i++){
 
 document.getElementById("departureTime").addEventListener("change", ()=> {
 document.getElementById("viewPokemon").style.display = "none";
+document.getElementById("chartPoke").innerHTML="";
 document.getElementById("viewCalculeTab").innerHTML="";
 document.getElementById("viewCalcule").innerHTML="";
 
@@ -117,8 +118,8 @@ else if ("N/A" === conditionHour){
 
 countPoke = window.filterCounterHour(dataHour,"spawn_time");
 dataPercent = window.filterCal(countPoke);
-
-    document.getElementById("viewCalculeTab").innerHTML+=
+  
+document.getElementById("viewCalculeTab").innerHTML+=
     `
     <div class="card-group col-12 justify-content-center">
       <div class="row">
@@ -155,6 +156,36 @@ for (let i=0; i<dataHour.length; i++){
   </div>
     `
     }
+
+  document.getElementById("chartPoke").innerHTML+=
+    `<canvas id="myChart"></canvas>`
+    
+    
+
+    let ctx = document.getElementById("myChart");
+     new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Total Pokémon', "Pokémon coming out in the " + conditionHour],
+            datasets: [{
+                label: 'Porcentaje de pokémones por hora de salida',
+                data: [100-dataPercent, dataPercent],
+                backgroundColor: [
+                    'rgba(100, 170, 103, 1)',
+                    'rgba(235, 127, 54, 1)'
+                ],
+                borderColor: [
+                    'rgba(100, 170, 103, 1)',
+                    'rgba(235, 127, 54, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        
+    });
+
+    
+
 })
 
 })

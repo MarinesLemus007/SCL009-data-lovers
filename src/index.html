@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css">   
+    <link rel="stylesheet" href="./css/bootstrap.min.css">  
   </head>
   <body class="p-3 mb-2 bg-info text-white">
     <header>
@@ -85,12 +86,15 @@
   <br>
   <br>
   <div class="container">
-    <div id="viewPokemon" class= "card-deck">   
+    <div id="viewPokemon" class= "card-deck">
     </div>      
   </div>
 
   <div class="container">
-    <div id="viewCalculeTab">
+    <div class="row" id="chartPoke">  
+    <!--<canvas id="myChart"></canvas>-->
+    </div>
+    <div id="viewCalculeTab"> 
     </div>
     <div id="viewCalcule" class="card-group">
     </div>
@@ -113,6 +117,6 @@
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
-  
+  <!--<script src="Chart.js"></script>-->
 </body>
 </html>

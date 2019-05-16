@@ -64,3 +64,9 @@
     min-width: 17rem;
     max-width: 20rem;
  }
+ 
+ #myChart{
+   width:10rem;
+   height:auto;
+   padding: 25px;
+ }
